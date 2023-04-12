@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- navbar -->
+<nav class="navbar">
+    <ul class="link-group">
+        <li class="link active"><a href="#">home</a></li>
+        <li class="link"><a href="#">projets</a></li>
+        <li class="link"><a href="#">CV</a></li>
+        <li class="link"><a href="#">skills</a></li>
+        <li class="link"><a href="#">Formations</a></li>
+        <li class="link"><a href="#">contact</a></li>
+        <li class="link"><a href="#">Jeux</a></li>
+    </ul>
+</nav>
+<!-- home section -->
+
+<section class="home-section active">
+    <h1 class="hero-heading" style="font-family: Righteous">Idriss <br> Taberkane</h1>
+    <img src="bateman.png" class="home-img" alt="image d'entré">
+</section>
+<!-- project section -->
+<section class="project-section active">
+    <h1 class="project-heading">Mes projets</h1>
+    <div class="project-container">
+        <div class="project-card">
+            <img src="/bo3.png" class="project-img" alt="projet1">
+            <div class="project-content">
+                <h1 class="project-title">project 01<br>HTML/CSS</h1>
+                <p class="project-info">
+                  Création d'un site vitrine qui a pour but de présenter un de nos jeux vidéo préferé
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">github repo</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="reseaux.jpg" class="project-img" alt="projet2">
+            <div class="project-content">
+                <h1 class="project-title">project 02<br>Réseaux</h1>
+                <p class="project-info">
+                    Mise en place d'un Réseaux et configuration de différents services via les différents OS (Windows server, ubuntu server etc...)
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn live">voir</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="web-scraping-with-python.png" class="project-img" alt="projet3">
+            <div class="project-content">
+                <h1 class="project-title">project 03<br>Algo/Python</h1>
+                <p class="project-info">
+                    Scrapper du contenu Web avec Python et comprendre comment l'utiliser
+                    et Approfondir les différentes notions vues durant le premier projet en
+                    Algorithmie et en Python
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">github repo</button>
+                </div>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="c.png" class="project-img" alt="projet1">
+            <div class="project-content">
+                <h1 class="project-title">project 04<br>C</h1>
+                <p class="project-info">
+                    Le but de ce projet est de retrouver le plus grand carré possible dans une map.
+                </p>
+                <div class="project-btn-grp">
+                    <button class="project-btn github">github repo</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- about section -->
+<section class="about-section active">
+    <div class="about">
+        <div class="about-img-container">
+            <img src="909314.png" class="about-img" alt="cv image">
+            <button class="download-cv-btn">Télécharger</button>
+        </div>
+        <p class="about-info">Vous pouvez télécharger mon cv en cliquant</p>
+    </div>
+<!-- skills -->
+<div class="skill-section">
+    <h1 class="heading">skills</h1>
+    <div class="skills-container">
+        <div class="skill-card">
+            <img src="html.png" class="skill-img" alt="">
+            <h1 class="skill-name">HTML</h1>
+            <p class="skill-info"></p>
+        </div>
+        <div class="skill-card">
+            <img src="pyth.png" class="skill-img" alt="">
+            <h1 class="skill-name">Python</h1>
+            <p class="skill-info"></p>
+        </div>
+        <div class="skill-card">
+            <img src="c img.png" class="skill-img" alt="">
+            <h1 class="skill-name">C</h1>
+            <p class="skill-info"></p>
+        </div>
+        <div class="skill-card">
+            <img src="internet.png" class="skill-img" alt="">
+            <h1 class="skill-name">Réseaux</h1>
+            <p class="skill-info"></p>
+        </div>
+    </div>
+</div>
+</section>
+<!-- timeline -->
+<div class="timeline">
+    <h1 class="heading">Formations</h1>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">2017-2020</h1>
+            <p class="card-detail">Baccalauréat économique et social :
+                Lycée Privée Sainte Louise 75020 Paris</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">2021-2022</h1>
+            <p class="card-detail">EPITECH - année 1 du cursus - Le Kremlin Bicêtre</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h1 class="card-title">2022-En Cours</h1>
+            <p class="card-detail">Bachelor Développeur informatique option cybersécurité - La Défense</p>
+        </div>
+    </div>
+</div>
+<section class="contact-section">
+    <form class="contact-form">
+        <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
+        <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
+        <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
+        <button type="submit" class="form-submit-btn">contact</button>
+    </form>
+    <!-- map -->
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.21532105818!2d2.2336298516132986!3d48.89223347918936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dabb6535483%3A0xa2531c9692f1738b!2sGuardia%20Cybersecurity%20School%20Paris%20%3A%20%C3%A9cole%20de%20cybers%C3%A9curit%C3%A9!5e0!3m2!1sfr!2sfr!4v1681294885467!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    </section>
+</body>
+</html>
