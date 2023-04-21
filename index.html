@@ -7,32 +7,41 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <p><a href="/login.php">Login</a></p>
+    <p><a href="/register.php">Register</a></p>
+    <script src="mail.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+     (function(){
+         emailjs.init("lLG6K-Mgqh-8qQ_LB");
+     })();
+</script>
 </head>
 <body>
-    <!-- navbar -->
 <nav class="navbar">
     <ul class="link-group">
-        <li class="link active"><a href="#">home</a></li>
-        <li class="link"><a href="#">projets</a></li>
-        <li class="link"><a href="#">CV</a></li>
-        <li class="link"><a href="#">skills</a></li>
-        <li class="link"><a href="#">Formations</a></li>
-        <li class="link"><a href="#">contact</a></li>
-        <li class="link"><a href="#">Jeux</a></li>
+        <li class="link active"><a href="#home">home</a></li>
+        <li class="link"><a href="#projets">projets</a></li>
+        <li class="link"><a href="#CV">CV</a></li>
+        <li class="link"><a href="#skills">skills</a></li>
+        <li class="link"><a href="#Formations">Formations</a></li>
+        <li class="link"><a href="#contact">contact</a></li>
+        <li class="link"><a href="#Jeux">Jeux</a></li>
     </ul>
 </nav>
-<!-- home section -->
 
-<section class="home-section active">
+<section id="home" class="home-section active">
     <h1 class="hero-heading" style="font-family: Righteous">Idriss <br> Taberkane</h1>
-    <img src="idriss.jpeg" class="home-img" alt="image d'entré">
+    <img src="idriss.webp" class="home-img" alt="image d'entré">
 </section>
-<!-- project section -->
-<section class="project-section active">
+
+<section id="projets" class="project-section active">
     <h1 class="project-heading">Mes projets</h1>
     <div class="project-container">
         <div class="project-card">
-            <img src="/bo3.png" class="project-img" alt="projet1">
+            <img src="/bo3.webp" class="project-img" alt="projet1">
             <div class="project-content">
                 <h1 class="project-title">project 01<br>HTML/CSS</h1>
                 <p class="project-info">
@@ -46,7 +55,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="reseaux.jpg" class="project-img" alt="projet2">
+            <img src="reseaux.webp" class="project-img" alt="projet2">
             <div class="project-content">
                 <h1 class="project-title">project 02<br>Réseaux</h1>
                 <p class="project-info">
@@ -58,7 +67,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="web-scraping-with-python.png" class="project-img" alt="projet3">
+            <img src="web-scraping-with-python.webp" class="project-img" alt="projet3">
             <div class="project-content">
                 <h1 class="project-title">project 03<br>Algo/Python</h1>
                 <p class="project-info">
@@ -74,7 +83,7 @@
             </div>
         </div>
         <div class="project-card">
-            <img src="c.png" class="project-img" alt="projet1">
+            <img src="c.webp" class="project-img" alt="projet1">
             <div class="project-content">
                 <h1 class="project-title">project 04<br>C</h1>
                 <p class="project-info">
@@ -87,46 +96,46 @@
         </div>
     </div>
 </section>
-<!-- about section -->
-<section class="about-section active">
+
+<section id="CV" class="about-section active">
     <div class="about">
         <div class="about-img-container">
-            <img src="909314.png" class="about-img" alt="cv image">
+            <img src="909314.webp" class="about-img" alt="cv image">
             <a href="cv idriss taberkane.pdf" download>
             <button class="download-cv-btn">Télécharger</button>
             </a>
         </div>
         <p class="about-info">Vous pouvez télécharger mon cv en cliquant</p>
     </div>
-<!-- skills -->
-<div class="skill-section">
+
+<div id="skills" class="skill-section">
     <h1 class="heading">skills</h1>
     <div class="skills-container">
         <div class="skill-card">
-            <img src="html.png" class="skill-img" alt="">
+            <img src="html.webp" class="skill-img" alt="">
             <h1 class="skill-name">HTML</h1>
             <p class="skill-info"></p>
         </div>
         <div class="skill-card">
-            <img src="pyth.png" class="skill-img" alt="">
+            <img src="pyth.webp" class="skill-img" alt="">
             <h1 class="skill-name">Python</h1>
             <p class="skill-info"></p>
         </div>
         <div class="skill-card">
-            <img src="c img.png" class="skill-img" alt="">
+            <img src="c img.webp" class="skill-img" alt="">
             <h1 class="skill-name">C</h1>
             <p class="skill-info"></p>
         </div>
         <div class="skill-card">
-            <img src="internet.png" class="skill-img" alt="">
+            <img src="internet.webp" class="skill-img" alt="">
             <h1 class="skill-name">Réseaux</h1>
             <p class="skill-info"></p>
         </div>
     </div>
 </div>
 </section>
-<!-- timeline -->
-<div class="timeline">
+
+<div id="Formations" class="timeline">
     <h1 class="heading">Formations</h1>
     <div class="card">
         <div class="card-body">
@@ -148,212 +157,22 @@
         </div>
     </div>
 </div>
-<div class="game-container">
+
+<div id="Jeux" class="game-container">
     <h1 style="color: yellow;">Pac-Man Game</h1>
     <canvas id="gameCanvas" width="500" height="500"></canvas>
 </div>
-<script>
-    const canvas = document.getElementById('gameCanvas');
-    const ctx = canvas.getContext('2d');
-
-    const pacSize = 30;
-    const pacSpeed = 3;
-    let pacX = canvas.width / 2 - pacSize / 2;
-    let pacY = canvas.height / 2 - pacSize / 2;
-    let pacDx = 0;
-    let pacDy = 0;
-
-    const ghostSize = 30;
-    const ghostSpeed = 2;
-    let ghostX = 50;
-    let ghostY = 50;
-    let ghostDx = ghostSpeed;
-    let ghostDy = ghostSpeed;
-
-    const pointSize = 5;
-    const points = [];
-    for (let i = 0; i < 100; i++) {
-        points.push({
-            x: Math.random() * (canvas.width - pointSize),
-            y: Math.random() * (canvas.height - pointSize),
-        });
-    }
-
-    let score = 0;
-
-    let gameStarted = false;
-    let gameOver = false;
-
-    window.addEventListener('keydown', (e) => {
-        if (!gameStarted && !gameOver) {
-            gameStarted = true;
-        } else if (gameOver) {
-            gameOver = false;
-            gameStarted = false;
-            score = 0;
-            pacX = canvas.width / 2 - pacSize / 2;
-            pacY = canvas.height / 2 - pacSize / 2;
-            ghostX = 50;
-            ghostY = 50;
-            ghostDx = ghostSpeed;
-            ghostDy = ghostSpeed;
-            return;
-        }
-
-        switch (e.key) {
-            case 'ArrowUp':
-                pacDx = 0;
-                pacDy = -1;
-                break;
-            case 'ArrowDown':
-                pacDx = 0;
-                pacDy = 1;
-                break;
-            case 'ArrowLeft':
-                pacDx = -1;
-                pacDy = 0;
-                break;
-            case 'ArrowRight':
-                pacDx = 1;
-                pacDy = 0;
-                break;
-        }
-    });
-
-    function drawPac() {
-        ctx.beginPath();
-        ctx.arc(pacX, pacY, pacSize, 0.2 * Math.PI, 1.8 * Math.PI);
-        ctx.lineTo(pacX, pacY);
-        ctx.closePath();
-        ctx.fillStyle = 'yellow';
-        ctx.fill();
-    }
-
-    function drawGhost() {
-        ctx.fillStyle = 'red';
-        ctx.fillRect(ghostX, ghostY, ghostSize, ghostSize);
-    }
-
-    function drawPoints() {
-        ctx.fillStyle = 'white';
-        points.forEach((point, index) => {
-                ctx.beginPath();
-                ctx.arc(point.x, point.y, pointSize, 0, 2 * Math.PI);
-                ctx.fill();
-
-                const pointDistance = Math.sqrt(Math.pow(point.x - pacX, 2) + Math.pow(point.y - pacY, 2));
-                if (pointDistance < pacSize / 2 + pointSize / 2) {
-                    points.splice(index, 1);
-                    score++;
-                    points.push({
-                        x: Math.random() * (canvas.width - pointSize),
-                        y: Math.random() * (canvas.height - pointSize),
-                    });
-                }
-            });
-        }
-
-        function drawScore() {
-            ctx.font = '20px Arial';
-            ctx.fillStyle = 'white';
-            ctx.fillText(`Score: ${score}`, 10, 30);
-        }
-
-        function drawStartScreen() {
-            ctx.font = '40px Arial';
-            ctx.fillStyle = 'yellow';
-            ctx.fillText('Pac-Man', canvas.width / 2 - 80, canvas.height / 2 - 30);
-
-            ctx.font = '20px Arial';
-            ctx.fillStyle = 'white';
-            ctx.fillText('Press any arrow key to start', canvas.width / 2 - 120, canvas.height / 2 + 30);
-        }
-
-        function drawGameOverScreen() {
-            ctx.font = '40px Arial';
-            ctx.fillStyle = 'yellow';
-            ctx.fillText('Game Over', canvas.width / 2 - 100, canvas.height / 2 - 30);
-
-            ctx.font = '20px Arial';
-            ctx.fillStyle = 'white';
-            ctx.fillText('Press any arrow key to restart', canvas.width / 2 - 130, canvas.height / 2 + 30);
-        }
-
-        window.addEventListener('keydown', (e) => {
-        // Ajout pour empêcher le scroll
-        if (e.key.includes('Arrow')) {
-            e.preventDefault();
-        }
-    });
-
-    function getRandomDirection() {
-        const directions = [
-            { dx: ghostSpeed, dy: 0 },
-            { dx: -ghostSpeed, dy: 0 },
-            { dx: 0, dy: ghostSpeed },
-            { dx: 0, dy: -ghostSpeed },
-        ];
-        return directions[Math.floor(Math.random() * directions.length)];
-    }
-
-    let ghostDirectionChangeTimer = 0;
-    const ghostDirectionChangeInterval = 60;
-
-        function update() {
-            if (!gameStarted) {
-                drawStartScreen();
-                return;
-            }
-
-            if (gameOver) {
-                drawGameOverScreen();
-                return;
-            }
-
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-            pacX += pacDx * pacSpeed;
-            pacY += pacDy * pacSpeed;
-
-            if (pacX < 0) pacX = 0;
-            if (pacX + pacSize > canvas.width) pacX = canvas.width - pacSize;
-            if (pacY < 0) pacY = 0;
-            if (pacY + pacSize > canvas.height) pacY = canvas.height - pacSize;
-
-            ghostX += ghostDx;
-            ghostY += ghostDy;
-
-            if (ghostX < 0 || ghostX + ghostSize > canvas.width) ghostDx *= -1;
-            if (ghostY < 0 || ghostY + ghostSize > canvas.height) ghostDy *= -1;
-
-            const pacGhostDist = Math.sqrt(Math.pow(ghostX - pacX, 2) + Math.pow(ghostY - pacY, 2));
-            if (pacGhostDist < pacSize / 2 + ghostSize / 2) {
-                gameOver = true;
-            }
-            ghostDirectionChangeTimer++;
-        if (ghostDirectionChangeTimer >= ghostDirectionChangeInterval) {
-            const newDirection = getRandomDirection();
-            ghostDx = newDirection.dx;
-            ghostDy = newDirection.dy;
-            ghostDirectionChangeTimer = 0;
-        }
-            drawPac();
-            drawGhost();
-            drawPoints();
-            drawScore();
-        }
-        setInterval(update, 1000 / 60);
-    </script>
+<script src="game.js"></script>
 
 
-<section class="contact-section">
-    <form action="contact.php" method="post" class="contact-form">
+<section id="contact" class="contact-section">
+    <form class="contact-form">
         <input type="text" name="name" id="name" autocomplete="off" placeholder="name">
         <input type="text" name="email" id="email" autocomplete="off" placeholder="email">
         <textarea name="msg" id="msg" placeholder="message" autocomplete="off"></textarea>
-        <button type="submit" class="form-submit-btn">contact</button>
+        <button type="submit" class="form-submit-btn" onclick="sendMail()">contact</button>
     </form>
-    <!-- map -->
+
     <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2623.21532105818!2d2.2336298516132986!3d48.89223347918936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66dabb6535483%3A0xa2531c9692f1738b!2sGuardia%20Cybersecurity%20School%20Paris%20%3A%20%C3%A9cole%20de%20cybers%C3%A9curit%C3%A9!5e0!3m2!1sfr!2sfr!4v1681294885467!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
